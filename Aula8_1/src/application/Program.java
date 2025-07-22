@@ -29,7 +29,15 @@ public class Program {
 		
 		System.out.println("Digite a quantidade de produtos que deseja adicionar no estoque: ");
 		int quantity = entrada.nextInt();
-		product.addProducts(quantity); //objeto produto recebendo a quantidade na função de adicionar produtos
+		product.addProducts(quantity); //objeto produto recebendo a quantidade digitada para a função de adicionar produtos
+		
+		System.out.println();
+		System.out.println("Dados atualizados: " + product);
+		
+		System.out.println();
+		System.out.println("Digite a quantidade de produtos para serem removidos do estoque: ");
+		quantity = entrada.nextInt();
+		product.removeProducts(quantity);
 		
 		System.out.println();
 		System.out.println("Dados atualizados: " + product);
