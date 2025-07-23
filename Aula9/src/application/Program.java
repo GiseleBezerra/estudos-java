@@ -18,18 +18,15 @@ public class Program {
 		String name = entrada.nextLine();
 		
 		System.out.print("Preço: ");
-		double price = entrada.nextDouble();
+		double price = entrada.nextDouble();		
 		
-		System.out.print("Quantidade no estoque: ");
-		int quantity = entrada.nextInt();
-		
-		Product product = new Product(name, price, quantity);
+		Product product = new Product(name, price); // Construtor
 		
 		System.out.println();
 		System.out.println("Dados do produto: " + product);
 		System.out.println();
 		System.out.print("Digite a quantidade de produto que será adicionado no estoque: ");
-		quantity = entrada.nextInt();
+		int quantity = entrada.nextInt();
 		product.addProducts(quantity);
 		
 		System.out.println();
